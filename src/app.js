@@ -35,7 +35,7 @@ app.get('/', (req, res) => {
   responseHandlers.success({
     res,
     status:200,
-    message: 'Servidor inicializado correctamente',
+    message: 'Server initialized successfully',
     data: {
       "users": "http://localhost:900/api/v1/users",
       "conversations": "http://localhost:900/api/v1/conversations"

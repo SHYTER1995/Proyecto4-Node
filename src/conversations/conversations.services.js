@@ -16,7 +16,7 @@ const getAllConversationsByUser = (req,res) =>{
       handleResponses.error({
         res,
         status: 400,
-        message: 'An error accurred while getting conversations',
+        message: 'An error has occurred while getting conversations',
         data: error,
       })
     })

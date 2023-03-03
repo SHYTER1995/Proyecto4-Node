@@ -17,7 +17,7 @@ const getAllUsers = (req,res) =>{
         res,
         data: error,
         status: 400,
-        message: 'An error accurred while getting all users',
+        message: 'An error has occurred while getting all users',
         fields: {
           "URL" : "http://localhost:9000/api/v1/users"
         }
@@ -49,7 +49,7 @@ const getUserById = (req,res) => {
         res,
         data: error,
         status: 400,
-        message: 'An error accurred while getting a user'
+        message: 'An error has occurred while getting a user'
       })
     })
 }
@@ -70,7 +70,7 @@ const postUser = (req, res) => {
         res,
         data: error,
         status: 400,
-        message: 'An error accurred while creating a user',
+        message: 'An error has occurred while creating a user',
         fields: {
           //"id": "uuid.v4()",
           "firstName": "string",
@@ -112,7 +112,7 @@ const patchUser = (req, res) => {
         res,
         data: error,
         status: 400,
-        message: 'An error accurred while updating the user',
+        message: 'An error has occurred while updating the user',
         fields: {
           "id": "uuid.v4()",
           "firstName": "string",
@@ -153,7 +153,7 @@ const deleteUser = (req, res) => {
         res,
         data: error,
         status: 400,
-        message: 'An error accurred while deleting the user'
+        message: 'An error has occurred while deleting the user'
       })
     })
 }
@@ -174,7 +174,7 @@ const getMyUser = (req, res) => {
       handleResponses.error({
         res,
         status: 400,
-        message: 'An error occurred while getting a user',
+        message: 'An error has occurred while getting a user',
         data: error,
       })
     })
@@ -196,7 +196,7 @@ const deleteMyUser = (req, res) => {
       handleResponses.error({
         res,
         status: 400,
-        message: 'An error accurred while deleting the user',
+        message: 'An error has occurred while deleting the user',
         data: error,
       })
     })
@@ -226,7 +226,7 @@ const patcMyhUser = (req, res) => {
         res,
         data: error,
         status: 400,
-        message: 'An error accurred while updating the user',
+        message: 'An error has occurred while updating the user',
       })
     })
 }

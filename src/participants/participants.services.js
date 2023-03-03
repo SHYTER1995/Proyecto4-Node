@@ -16,7 +16,7 @@ const getAllParticipants = (req,res) =>{
         res,
         data: error,
         status: 400,
-        message: 'An error accurred while getting all participants',
+        message: 'An error has occurred while getting all participants',
         fields: {
           "URL" : "http://localhost:9000/api/v1/participants"
         },
@@ -49,7 +49,7 @@ const getParticipantById = (req,res) => {
         res,
         data: error,
         status: 400,
-        message: 'An error accurred while getting a participant'
+        message: 'An error has occurred while getting a participant'
       })
     })
 }
@@ -70,7 +70,7 @@ const postParticipant = (req, res) => {
         res,
         data: error,
         status: 400,
-        message: 'An error accurred while creating a participant',
+        message: 'An error has occurred while creating a participant',
         fields: {
           "id": "uuid.v4()",
           "userId": "uuid.v4()",
@@ -108,7 +108,7 @@ const patchParticipant = (req, res) => {
           res,
           data: error,
           status: 400,
-          message: 'An error accurred while updating the participant',
+          message: 'An error has occurred while updating the participant',
           fields: {
             "id": "uuid.v4()",
             "userId": "uuid.v4()",
@@ -145,7 +145,7 @@ const deleteParticipant = (req, res) => {
         res,
         data: error,
         status: 400,
-        message: 'An error accurred while deleting the participant'
+        message: 'An error has occurred while deleting the participant'
       })
     })
 }
